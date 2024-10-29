@@ -1,0 +1,184 @@
+/* Reusable Styles */
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+
+/* Grid CSS */
+.container {
+  width: 100%;
+  max-width: 1141px;
+  margin: 0 auto;
+}
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap; /* Changed because issue #1 */
+  -ms-flex-wrap: wrap; /* Changed because issue #1 */
+  flex-wrap: wrap; /* Changed because issue #1 */
+  position: relative;
+}
+.row.gap {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.row.stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.row.reverse {
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+.col {
+  width: 100%;
+}
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  padding: 0 15px;
+}
+div[class^="col"] div[class^="col"] {
+  padding: 0;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none; }
+
+.col-1 { width: 8.333%; }
+.gap .col-1 { width: 7.333%; }
+.offset-1 { margin-left: 8.333%; }
+
+.col-2 { width: 16.666%; }
+.gap .col-2 { width: 15.666%; }
+.offset-2 { margin-left: 16.666%; }
+
+.col-3 { width: 25%; }
+.gap .col-3 { width: 24%; }
+.offset-3 { margin-left: 25%; }
+
+.col-4 { width: 33.333%; }
+.gap .col-4 { width: 32.333%; }
+.offset-4 { margin-left: 33.333%; }
+
+.col-5 { width: 41.666%; }
+.gap .col-5 { width: 40.666%; }
+.offset-5 { margin-left: 41.666%; }
+
+.col-6 { width: 50%; }
+.gap .col-6 { width: 49%; }
+.offset-6 { margin-left: 50%; }
+
+.col-7 { width: 58.333%; }
+.gap .col-7 { width: 57.333%; }
+.offset-7 { margin-left: 58.333%; }
+
+.col-8 { width: 66.666%; }
+.gap .col-8 { width: 65.666%; }
+.offset-8 { margin-left: 66.666%; }
+
+.col-9 { width: 75%; }
+.gap .col-9 { width: 74%; }
+.offset-9 { margin-left: 75%; }
+
+.col-10 { width: 83.333%; }
+.gap .col-10 { width: 82.333%; }
+.offset-10 { margin-left: 83.333%; }
+
+.col-11 { width: 91.666%; }
+.gap .col-11 { width: 90.666%; }
+.offset-11 { margin-left: 91.666%; }
+
+.col-12 { width: 100%; }
+
+@media all and (max-width: 768px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .col,
+  .col-1, .gap .col-1,
+  .col-2, .gap .col-2,
+  .col-3, .gap .col-3,
+  .col-4, .gap .col-4,
+  .col-5, .gap .col-5,
+  .col-6, .gap .col-6,
+  .col-7, .gap .col-7,
+  .col-8, .gap .col-8,
+  .col-9, .gap .col-9,
+  .col-10, .gap .col-10,
+  .col-11, .gap .col-11,
+  .col-12 {
+    flex: auto;
+    -ms-flex: auto;
+    width: 100%;
+  }
+  .offset-1, .offset-2, .offset-3, .offset-4, .offset-5, .offset-6, .offset-7, .offset-8, .offset-9, .offset-10, .offset-11 { margin: 0; }
+}
+
+/* General Styles */
+.ac-product-image,
+.ac-product-image-main {
+  height: auto;
+  border: 1px solid #eee;
+}
+.ac-product-image {
+  max-width: 30%;
+  margin: 0 1%;
+}
+.ac-product-information {
+  padding-left: 30px!important;
+}
+.ac-product-archive .product.post {
+  margin-bottom: 30px;
+}
+.ac-product-archive .product.post .entry p {
+  margin-bottom: 0;
+}
+.ac-product-archive .product-image,
+.similar-products .product-image {
+  min-height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #eee;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.ac-pagination .sor {
+  margin-right: 8px;
+}
+.ac-pagination a {
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  margin-right: 5px;
+  text-decoration: none!important;
+  outline: none!important;
+}
+.ac-pagination a.current {
+  color: #000;
+}
