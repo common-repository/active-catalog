@@ -1,0 +1,61 @@
+.ac-field {
+    margin-left: 10px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.ac-content {
+    display: inline-block;
+}
+
+.ac-body {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    min-width: 400px;
+}
+
+/*-- Messages --*/
+.ac-success-message {
+}
+
+.ac-error-message strong {
+    color: #dd3d36;
+}
+
+/*-- TinyMCE Editor AC Button --*/
+.mce-ac-insert-form-button button {
+    background-color: #f2b861;
+    color: white !important;
+    border-radius: 4px;
+    font-size: 12px !important;
+    padding: 3px 4px !important;
+}
+
+.mce-ac-insert-form-button:hover {
+    border-color: transparent !important;
+}
+
+/*-- TinyMCE Editor Popup Window --*/
+div.mce-ac-forms-select {
+    top: 30px !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+
+div.mce-ac-form-btn-insert {
+    left: 20px !important;
+    top: 0 !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+
+div.mce-ac-forms-link {
+    top: 100px !important;
+}
+
+div.mce-ac-forms-link a {
+    text-decoration: underline !important;
+    color: #0073aa !important;
+}
